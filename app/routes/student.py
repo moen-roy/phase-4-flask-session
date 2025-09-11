@@ -4,7 +4,7 @@ from flask import Blueprint,jsonify
 
 student_bp=Blueprint("student",__name__,url_prefix="/student")
 
-@student_bp.route("/",methods=["GET"])
+@student_bp.route("/",methods=["GET","POST"])
 def home():
     return "welcome to our API"
 
